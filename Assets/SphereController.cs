@@ -8,6 +8,7 @@ public class SphereController : MonoBehaviour
     public float speed;
     public AudioSource moveAudio;
     public AudioSource portalAudio;
+    public AudioSource hitAudio;
 
     public AnimationCurve volumeCurve;
     public AnimationCurve pitchCurve;
@@ -48,9 +49,14 @@ public class SphereController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name == "YouAreWin")
         {
             portalAudio.Play();
+        }
+        else if(collision.gameObject.tag == "Wall")
+        {
+            hitAudio.Play();
         }
     }
 
