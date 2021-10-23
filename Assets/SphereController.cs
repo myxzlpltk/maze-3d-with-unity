@@ -6,6 +6,10 @@ public class SphereController : MonoBehaviour
 {
     private Rigidbody rg;
     public float speed;
+    public AudioSource moveAudio;
+
+    public AnimationCurve volumeCurve;
+    public AnimationCurve pitchCurve;
 
     // Start is called before the first frame update
     void Start()
@@ -47,5 +51,24 @@ public class SphereController : MonoBehaviour
         {
             Debug.Log("MENANG");
         }
+    }
+
+    private void FixedUpdate()
+    {
+        var currentSpeed = rg.velocity.magnitude;
+
+        // normalize speed into 0-1
+        var scaledVelocity = Remap(Mathf.Clamp(currentSpeed, 0, speed), 0, speed, 0, 1);
+
+        // set volume based on volume curve
+        moveAudio.volume = volumeCurve.Evaluate(scaledVelocity);
+
+        // set pitch based on pitch curve
+        moveAudio.pitch = pitchCurve.Evaluate(scaledVelocity);
+    }
+
+    public float Remap(float value, float from1, float to1, float from2, float to2)
+    {
+        return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
     }
 }
