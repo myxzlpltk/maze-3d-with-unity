@@ -7,6 +7,7 @@ public class SphereController : MonoBehaviour
     private Rigidbody rg;
     public float speed;
     public AudioSource moveAudio;
+    public AudioSource portalAudio;
 
     public AnimationCurve volumeCurve;
     public AnimationCurve pitchCurve;
@@ -49,7 +50,7 @@ public class SphereController : MonoBehaviour
     {
         if (collision.gameObject.name == "YouAreWin")
         {
-            Debug.Log("MENANG");
+            portalAudio.Play();
         }
     }
 
