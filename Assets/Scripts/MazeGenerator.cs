@@ -21,15 +21,8 @@ public class MazeGenerator : MonoBehaviour
     // ------------------------------------------------------
     // User defined variables - set in editor:
     // ------------------------------------------------------
-    [Header("Maze generation values:")]
-    [Tooltip("How many cells tall is the maze. MUST be an even number. " +
-        "If number is odd, it will be reduced by 1.\n\n" +
-        "Minimum value of 4.")]
-    public int mazeRows;
-    [Tooltip("How many cells wide is the maze. Must be an even number. " +
-        "If number is odd, it will be reduced by 1.\n\n" +
-        "Minimum value of 4.")]
-    public int mazeColumns;
+    private int mazeRows = GameStorage.Get<int>("size");
+    private int mazeColumns = GameStorage.Get<int>("size");
 
     [Header("Maze object variables:")]
     [Tooltip("Cell prefab object.")]
