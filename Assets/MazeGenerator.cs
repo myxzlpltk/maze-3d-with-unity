@@ -44,9 +44,6 @@ public class MazeGenerator : MonoBehaviour
     // System defined variables - You don't need to touch these:
     // ------------------------------------------------------
 
-    // Variable to store size of centre room. Hard coded to be 2.
-    private int centreSize = 2;
-
     // Dictionary to hold and locate all cells in maze.
     private Dictionary<Vector3, Cell> allCells = new Dictionary<Vector3, Cell>();
     // List to hold unvisited cells.
