@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,7 +140,11 @@ GameObject:
   - component: {fileID: 38523064}
   - component: {fileID: 38523063}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Level4
+=======
+  m_Name: Extreme
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,7 +213,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 38523064}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 1160918841}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: levelExtreme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!114 &38523064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +520,11 @@ GameObject:
   - component: {fileID: 235387085}
   - component: {fileID: 235387084}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Level2
+=======
+  m_Name: Medium
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -565,7 +593,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 235387085}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 1160918841}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: levelMedium
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!114 &235387085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -860,7 +904,11 @@ GameObject:
   - component: {fileID: 563828032}
   - component: {fileID: 563828031}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Level5
+=======
+  m_Name: Madness
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,7 +977,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 563828032}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 1160918841}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: levelMadness
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!114 &563828032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,7 +1046,11 @@ GameObject:
   - component: {fileID: 626515145}
   - component: {fileID: 626515148}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Level1
+=======
+  m_Name: Easy
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1051,7 +1119,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 626515146}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 1160918841}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: levelEasy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!114 &626515146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,7 +1969,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 969780836}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 1160918841}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: Option
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!114 &969780836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2240,6 +2340,10 @@ GameObject:
   - component: {fileID: 1160918839}
   - component: {fileID: 1160918838}
   - component: {fileID: 1160918837}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 1160918841}
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2331,6 +2435,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD
+=======
+--- !u!114 &1160918841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160918836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff2d9bdfe5347d4da29182180c6e313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainObject: {fileID: 1562710061}
+  optionObject: {fileID: 175120414}
+  levelObject: {fileID: 1642347721}
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!1 &1170018048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,7 +2765,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: Level 2
+=======
+  m_text: Medium
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2733,7 +2859,11 @@ GameObject:
   - component: {fileID: 1268427182}
   - component: {fileID: 1268427181}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Exit
+=======
+  m_Name: Back
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2802,7 +2932,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1268427182}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 1160918841}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: Main
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!114 &1268427182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2898,7 +3044,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: Level1
+=======
+  m_text: Easy
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -3349,7 +3499,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1539377368}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 1160918841}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: Level
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!114 &1539377368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3454,7 +3620,11 @@ GameObject:
   - component: {fileID: 1590220758}
   - component: {fileID: 1590220757}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Level3
+=======
+  m_Name: Hard
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3523,7 +3693,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1590220758}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 1160918841}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: levelHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!114 &1590220758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3644,7 +3830,23 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1605995850}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 1160918841}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
 --- !u!114 &1605995850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3740,7 +3942,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: Level 5
+=======
+  m_text: Madness
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -4062,7 +4268,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: Level 3
+=======
+  m_text: Hard
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -4196,7 +4406,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: Level 4
+=======
+  m_text: Extreme
+>>>>>>> cb9b98db4b7d638fae1f9ab314680398f0fe928a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
