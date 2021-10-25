@@ -44,30 +44,30 @@ public class MainMenuController : MonoBehaviour
 
     public void levelEasy()
     {
-        openGame(6, 4);
+        openGame(6, 2);
     }
 
     public void levelMedium()
     {
-        openGame(10, 4);
+        openGame(10, 2);
     }
 
     public void levelHard()
     {
-        openGame(14, 3);
+        openGame(14, 1.5f);
     }
 
     public void levelExtreme()
     {
-        openGame(20, 3);
+        openGame(20, 1.5f);
     }
 
     public void levelMadness()
     {
-        openGame(40, 2);
+        openGame(40, 1);
     }
 
-    void openGame(int size, int speed)
+    void openGame(int size, float speed)
     {
         GameStorage.Set("size", size);
         GameStorage.Set("speed", size);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SphereController : MonoBehaviour
 {
     private Rigidbody rg;
-    public float speed;
+    public float speed = GameStorage.Get<float>("speed");
     public AudioSource moveAudio;
     public AudioSource portalAudio;
     public AudioSource hitAudio;
