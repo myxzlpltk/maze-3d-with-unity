@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -42,40 +41,15 @@ public class MainMenuController : MonoBehaviour
         levelObject.SetActive(true);
     }
 
-    public void levelEasy()
-    {
-        openGame(6, 2);
-    }
+    public void LevelEasy() => LevelManager.LevelEasy();
 
-    public void levelMedium()
-    {
-        openGame(10, 2);
-    }
+    public void LevelMedium() => LevelManager.LevelMedium();
 
-    public void levelHard()
-    {
-        openGame(14, 1.5f);
-    }
+    public void LevelHard() => LevelManager.LevelHard();
 
-    public void levelExtreme()
-    {
-        openGame(20, 1.5f);
-    }
+    public void LevelExtreme() => LevelManager.LevelExtreme();
 
-    public void levelMadness()
-    {
-        openGame(40, 1);
-    }
+    public void LevelMadness() => LevelManager.LevelMadness();
 
-    void openGame(int size, float speed)
-    {
-        GameStorage.Set("size", size);
-        GameStorage.Set("speed", size);
-        SceneManager.LoadScene(1);
-    }
-
-    public void Exit()
-    {
-        Application.Quit();
-    }
+    public void Exit() => Application.Quit();
 }

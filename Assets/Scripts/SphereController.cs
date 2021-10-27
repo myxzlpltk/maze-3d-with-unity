@@ -1,58 +1,101 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SphereController : MonoBehaviour
 {
     private Rigidbody rg;
-    public float speed = GameStorage.Get<float>("speed");
+    public float speed = LevelManager.speed;
     public AudioSource moveAudio;
     public AudioSource portalAudio;
     public AudioSource hitAudio;
 
     public AnimationCurve volumeCurve;
     public AnimationCurve pitchCurve;
+    private bool moveable = true;
+
+    public GameObject pausedObject;
+    public GameObject gameWinObject;
+    public Text levelTextObject;
+    public Button nextLevelButton;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        levelTextObject.text = "Level " + LevelManager.name;
         rg = GetComponent<Rigidbody>();
+        pausedObject.SetActive(false);
+        gameWinObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("w"))
+        if (moveable && Input.GetKey("w"))
         {
             Vector3 maju = new Vector3(0, 0, 1);
             rg.AddForce(maju * speed);
         }
 
-        if (Input.GetKey("a"))
+        if (moveable && Input.GetKey("a"))
         {
             Vector3 kiri = new Vector3(-1, 0, 0);
             rg.AddForce(kiri * speed);
         }
 
-        if (Input.GetKey("s"))
+        if (moveable && Input.GetKey("s"))
         {
             Vector3 mundur = new Vector3(0, 0, -1);
             rg.AddForce(mundur * speed);
         }
 
-        if (Input.GetKey("d"))
+        if (moveable && Input.GetKey("d"))
         {
             Vector3 kanan = new Vector3(1, 0, 0);
             rg.AddForce(kanan * speed);
         }
     }
 
+    public void Pause()
+    {
+        moveable = false;
+        pausedObject.SetActive(true);
+    }
+
+    public void Resume()
+    {
+        moveable = true;
+        pausedObject.SetActive(false);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Exit() => Application.Quit();
+
+    public void NextLevel() => LevelManager.NextLevel();
+
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name == "YouAreWin")
         {
+            moveable = false;
+
+            moveAudio.Stop();
             portalAudio.Play();
+
+            gameObject.SetActive(false);
+
+            Debug.Log(LevelManager.IsLastLevel);
+            if(LevelManager.IsLastLevel)
+                nextLevelButton.interactable = false;
+
+            gameWinObject.SetActive(true);
         }
         else if(collision.gameObject.tag == "Wall")
         {

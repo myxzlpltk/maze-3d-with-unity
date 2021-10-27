@@ -21,8 +21,8 @@ public class MazeGenerator : MonoBehaviour
     // ------------------------------------------------------
     // User defined variables - set in editor:
     // ------------------------------------------------------
-    private int mazeRows = GameStorage.Get<int>("size");
-    private int mazeColumns = GameStorage.Get<int>("size");
+    private int mazeRows = LevelManager.size;
+    private int mazeColumns = LevelManager.size;
 
     [Header("Maze object variables:")]
     [Tooltip("Cell prefab object.")]
@@ -164,34 +164,28 @@ public class MazeGenerator : MonoBehaviour
         // Remove appropriate wall for chosen edge cell.
         if (newCell.gridPos.x == 0)
         {
-            Debug.Log("Type 1");
             mazeParent.transform.eulerAngles = new Vector3(0, 90, 0);
             RemoveWall(newCell.cScript, 1);
             gate = Instantiate(gatePrefab, newCell.cScript.wallL.transform.position, gatePrefab.transform.rotation);
         }
         else if (newCell.gridPos.x == mazeColumns)
         {
-            Debug.Log("Type 2");
             mazeParent.transform.eulerAngles = new Vector3(0, -90, 0);
             RemoveWall(newCell.cScript, 2);
             gate = Instantiate(gatePrefab, newCell.cScript.wallR.transform.position, gatePrefab.transform.rotation);
         }
         else if (newCell.gridPos.z == mazeRows)
         {
-            Debug.Log("Type 3");
             mazeParent.transform.eulerAngles = new Vector3(0, 0, 0);
             RemoveWall(newCell.cScript, 3);
             gate = Instantiate(gatePrefab, newCell.cScript.wallU.transform.position, gatePrefab.transform.rotation);
         }
         else
         {
-            Debug.Log("Type 4");
             mazeParent.transform.eulerAngles = new Vector3(0, 180, 0);
             RemoveWall(newCell.cScript, 4);
             gate = Instantiate(gatePrefab, newCell.cScript.wallD.transform.position, gatePrefab.transform.rotation);
         }
-
-        Debug.Log("Maze generation finished.");
     }
 
     public List<Cell> GetUnvisitedNeighbours(Cell curCell)
