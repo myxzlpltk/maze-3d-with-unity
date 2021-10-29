@@ -27,8 +27,6 @@ public class SphereController : MonoBehaviour
     {
         levelTextObject.text = "Level " + LevelManager.name;
         rg = GetComponent<Rigidbody>();
-        pausedObject.SetActive(false);
-        gameWinObject.SetActive(false);
     }
 
     // Update is called once per frame

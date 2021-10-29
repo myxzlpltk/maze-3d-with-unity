@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1160918841}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: levelExtreme
+        m_MethodName: LevelExtreme
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -407,7 +407,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1160918841}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: levelMedium
+        m_MethodName: LevelMedium
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -484,7 +484,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -633,7 +633,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1160918841}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: levelMadness
+        m_MethodName: LevelMadness
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -693,7 +693,6 @@ GameObject:
   - component: {fileID: 626515147}
   - component: {fileID: 626515146}
   - component: {fileID: 626515145}
-  - component: {fileID: 626515148}
   m_Layer: 5
   m_Name: Easy
   m_TagString: Untagged
@@ -767,7 +766,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1160918841}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: levelEasy
+        m_MethodName: LevelEasy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -815,18 +814,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626515143}
   m_CullTransparentMesh: 1
---- !u!114 &626515148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626515143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e55a79b1880183a43aa5d7815fe402ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &712789104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,7 +1466,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainObject: {fileID: 1562710061}
-  optionObject: {fileID: 0}
   levelObject: {fileID: 1642347721}
 --- !u!1 &1170018048
 GameObject:
@@ -2304,7 +2290,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1562710062}
-  - component: {fileID: 1562710063}
   m_Layer: 5
   m_Name: Main
   m_TagString: Untagged
@@ -2335,18 +2320,6 @@ RectTransform:
   m_AnchoredPosition: {x: -217, y: 26}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1562710063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562710061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091cc07e52e246e47b0906650fe9ae3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1590220755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,7 +2405,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1160918841}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: levelHard
+        m_MethodName: LevelHard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2756,7 +2729,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1642347722}
-  - component: {fileID: 1642347723}
   m_Layer: 5
   m_Name: LevelOption
   m_TagString: Untagged
@@ -2789,18 +2761,6 @@ RectTransform:
   m_AnchoredPosition: {x: -217, y: 26}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1642347723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642347721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 091cc07e52e246e47b0906650fe9ae3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1759099584
 GameObject:
   m_ObjectHideFlags: 0
